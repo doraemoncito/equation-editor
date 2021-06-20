@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="mb-3">
+    A simple equation editor using LaTeX and MathJax.
+  </div>
+  <div class="mb-3">
+    <label for="latexEquationTextArea" class="form-label mb-2">Enter your <a
+      href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX equation</a>, (e.g. P_&#x7b;n,k&#x7d; = K^&#x7b;n&#x7d;):</label>
+    <textarea class="form-control" id="latexEquationTextArea" rows="5" [(ngModel)]="formula"></textarea>
+  </div>
+  <div id="rendered-equation-container" class="mb-3">
+    <div class="mb-2">Rendered equation:</div>
+    <div [equationEditorMath]="formula" class="bg-light rounded-1 p-3 border-light"></div>
+<!--    <div class="mt-3">-->
+<!--      <equation-editor-mathjax [content]="formula" class="bg-light rounded-1 p-3 border-light"></equation-editor-mathjax>-->
+<!--    </div>-->
+    <button class="btn btn-primary mt-3">Download SVG</button>
+  </div>
+</div>
