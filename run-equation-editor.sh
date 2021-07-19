@@ -46,4 +46,4 @@ echo
 
 # Start the server
 cd equation-editor || exit
-ng serve --verbose --watch --live-reload
+ng serve --verbose --watch --live-reload --base-href "/"
