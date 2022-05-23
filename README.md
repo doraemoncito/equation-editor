@@ -1,6 +1,8 @@
 # Equation Editor
 
-An equation editor written in Angular and MathJax 
+An equation editor written in Angular and MathJax.
+
+A live version of this equation editor can be found on [GitHub Pages](https://doraemoncito.github.io/equation-editor/).
 
 ## Building for GitHub Pages
 
